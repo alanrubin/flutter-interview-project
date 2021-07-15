@@ -1,19 +1,19 @@
 # Flutter Interview Project
 
-This is a small project for a Flutter interview. Please use the latest Flutter version with .
+This is a small project for a Flutter interview.
 
 ## Goal
 
-Create an mobile application that can retrieves and displays the user repositories and organisations (and their repositories) in Github.
+Create an mobile application that can retrieve and display random users and specific user repositories and organisations (and organisation repositories) in Github.
 
 ### UX/UI
 
 Up to you but we suggest the following:
 
-- Main page: Shows a random list of users (use getRandomUsers on github_api.dart) that can be tapped to navigate to User page and also has a input box on the topbar for entering your own user id to retrieve data (use getUserData on github_api.dart)
-- User page: Show user information retrieved (Personal Info including image). Has a link to navigate to user repositories page (use getUserRepositories on github_api.dart). Has a link to navigate to user organisations page.
+- Main page: Shows a random list of users (use getRandomUsers on github_api.dart) that can be tapped to navigate to User page and also has a input box on the topbar for entering your own user id to retrieve data (use getUserInformation on github_api.dart) - that input box is display only if a search icon on the top bar is tapped.
+- User page: Show user information retrieved (Personal Info including image). Has a link to navigate to user repositories page (use getUserRepositories on github_api.dart). Has a link to navigate to user organisations page as well (use getUserOrganisations on github_api.dart).
 - Repositories page: List of repositories of the user with basic information displayed (the more graphical the better)
-- Organisations page: List of organisations of the user with basic information displayed (the more graphical the better). Has a link to navigate to organisation repositories page ("Repositories page" above) - (use getOrgRepositories on github_api.dart)
+- Organisations page: List of organisations of the user with basic information displayed (the more graphical the better). Has a link to navigate to organisation repositories page ("Repositories page" above) - (use getOrganisationRepositories on github_api.dart)
 
 ## Requirements
 
@@ -36,11 +36,11 @@ Copy this repository to a repository on your name and add the solution there. It
 - Adding a spinner when information is loading
 - Deal with errors coming from the backend (because eventually it will happen!)
 - Make sure components/page boundaries are clear
-- Create Model objects for the API data retrieved (serialisation/deserialisation?)
+- Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
 - Some sort of Unit Test
 - Some sort of Integration Test
 - Use Navigation 2.0
-- Add some sort of state management to show how that is done
+- Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
 - Follow Dart [style conventions](https://dart.dev/guides/language/effective-dart/style)
 - Create a stream that refreshes the random displayed user list every 15 seconds
 - Show common tools used for you daily development environment (linters, code formatter, git workflow and so on)

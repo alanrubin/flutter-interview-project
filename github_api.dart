@@ -22,10 +22,13 @@ class GitHubApi {
   Future<List<dynamic>> getUserRepositories(String userLoginId) async =>
       _request('users/$userLoginId/repos?per_page=250') as List<dynamic>;
 
-  Future<List<dynamic>> getOrgRepositories(String orgLoginId) async =>
+  Future<List<dynamic>> getUserOrganisations(String userLoginId) async =>
+      _request('users/$userLoginId/orgs?per_page=250') as List<dynamic>;
+
+  Future<List<dynamic>> getOrganisationsRepositories(String orgLoginId) async =>
       _request('orgs/$orgLoginId/repos?per_page=250') as List<dynamic>;
 
-  Future<dynamic> getUserData(String userLoginId) async =>
+  Future<dynamic> getUserInformation(String userLoginId) async =>
       _request('users/$userLoginId');
 
   Future<List<dynamic>> getRandomUsers() async =>
