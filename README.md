@@ -4,7 +4,7 @@ This is a small project for a Flutter interview.
 
 ## Goal
 
-Create an mobile application that can retrieve and display random users and specific user repositories and organisations (and organisation repositories) in Github.
+Create an mobile application that can retrieve and display random users and specific user repositories and organisations (and organisation repositories) from Github.
 
 ### UX/UI
 
@@ -17,9 +17,9 @@ Up to you but we suggest the following:
 
 ## Requirements
 
-- Use latest stable flutter version (at this time > 2.2)
+- Use latest stable flutter version (at this time v3)
 - Have [sound null safety](https://dart.dev/null-safety) enabled
-- Use standard flutter navigation for screens (See bonus below for using Navigation 2.0)
+- Use standard flutter navigation for screens (See bonus below for using a routing library)
 
 ## Retrieving data
 
@@ -39,8 +39,9 @@ Copy this repository to a repository on your name and add the solution there. It
 - Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?)
 - Some sort of Unit Test
 - Some sort of Integration Test
-- Use Navigation 2.0
-- Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on)
+- Use a routing library available at pub.dev
+- Add localization
+- Add some sort of state management to show how that is done (InheritedWidget, Provider, GetIt, Mobx and so on) - Better Mobx if you have experience
 - Follow Dart [style conventions](https://dart.dev/guides/language/effective-dart/style)
 - Create a stream that refreshes the random displayed user list every 15 seconds
 - Show common tools used for you daily development environment (linters, code formatter, git workflow and so on)
