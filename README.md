@@ -39,7 +39,7 @@ Copy this repository to a repository on your name and add the solution there. It
 - Adding a spinner when information is loading
 - Deal with errors coming from the backend (because eventually it will happen!)
 - Make sure components/page boundaries are clear
-- Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?). Try to use a library to generate the code for the endpoints (OpenApi? Freezed?)
+- Create model objects for the API data retrieved to avoid working with dynamic (serialisation/deserialisation?). Try to use a library to generate the code for the endpoints (OpenApi? Freezed? Retrofit?)
 - Some sort of Unit Test
 - Some sort of Integration Test
 - Use a routing library available at pub.dev (auto_route? beamer?)
