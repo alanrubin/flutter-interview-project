@@ -4,7 +4,7 @@ This is a small project for a Flutter interview.
 
 ## Goal
 
-Create an mobile application that can retrieve and display random users and specific user repositories and organisations (and organisation repositories) from Github.
+Create an mobile application that can retrieve and display random users and specific user repositories from Github.
 
 ### UX/UI
 
